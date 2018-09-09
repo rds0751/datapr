@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title></title>
+    <link rel="stylesheet" href="style/main.css">
+  </head>
+  <body style="background-color: rgb(245, 245, 250);">
+  <div class="web-nav"><!-- Website navigation starts here-->
+    <ul class="menu"><!-- Menu starts here-->
+      <li id="home-b"><img src="img/home2.png"></li><!-- home button-->
+      <li id="search-b"><img src="img/search2.png"></li><!-- search button -->
+      <li id="notificaion-b"><img src="img/bell2.png"></li><!-- notificaion button-->
+      <li><div id="pfp" class="nav-pfp"></div></li><!-- SYNTAX pfp="profile picture",nav-pfp="profile picture inside the navigation" -->
+      <li><div id="nav-name">John Doe</div></li><!-- SYNTAX nav-name="full name of the user"-->
+    </ul><!-- Menu ends here-->
+  </div><!-- Website navigation ends here-->
+
+
+<div class="cover-photo"></div><!-- Cover photo uploaded by user -->
+
+<div class="container"><!-- main content starts here -->
+  <div id="pfp" class="big-pfp"></div><!-- SYNTAX big-pfp="profile picture shown in normal size" -->
+  <table id="edit-links" style="width:100%;padding:10px;"><!-- table containing links to edit pfp and cover-photo starts here -->
+    <td style="float:left;padding-left:130px;"><a href="#">Change profile picture</a></td>
+    <td style="float:right;"><a href="#">Change cover photo</a></td>
+  </table><!-- table containing links to edit pfp and cover-photo ends here -->
+
+<div style="width:100%;padding-top:80px;"><!-- Main content starts here -->
+<div class="main-l-c"><!-- left side of the content starts here -->
+    <form action="" id="profile_details">
+        <p>Name</p>
+          <input type="text" name="name"><br>
+        <p>Username</p>
+          <input type="text" name="username"><br>
+        <p>Bio</p>
+          <input type="text" name="bio"><br>
+        <p>Occupation</p>
+          <input type="text" name="occupation"><br>
+        <p>Qualifications</p>
+          <input type="text" name="qualifications"><br>
+      <h3>Personal Info</h3>
+        <p>Email Address</p>
+          <input type="text" name="email"><br>
+        <p>Phone</p>
+          <input type="text" name="phone"><br>
+        <p>Gender</p>
+          <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Not Listed</option>
+            <option value="none">Prefer not to specify</option>
+          </select><br>
+    </form>
+</div><!-- left side of the content ends here-->
+<div class="main-r-c"><!-- right side of the content starts here -->
+  <div class="r-c">
+    <div class="choices">
+    <h4>Hobbies</h4>
+    <div id="divider"></div>
+    <ul>
+    <li>design</li>
+    <li>branding</li>
+    </ul>
+    </div>
+    <div class="choices">
+    <h4>Hobbies</h4>
+    <div id="divider"></div>
+    <ul>
+    <li>design</li>
+    <li>branding</li>
+    </ul>
+    </div>
+    <div class="choices">
+    <h4>Hobbies</h4>
+    <div id="divider"></div>
+    <ul>
+    <li>design</li>
+    <li>branding</li>
+    </ul>
+    </div>
+    <div class="choices">
+    <h4>Hobbies</h4>
+    <div id="divider"></div>
+    <ul>
+    <li>design</li>
+    <li>branding</li>
+    </ul>
+    </div>
+  </div><!-- right side of the content ends here -->
+</div><!-- Main content ends here -->
+
+
+
+</div>
+
+<div class="b bb_ settingsb"><!-- SYNTAX b="button",wb_="white button inside",homesignupb="signup button on home page" -->
+  <button id="button" class="bb" type="button" name="button" >Sign up</button>
+</div>
+
+<style>
+.settingsb{
+  padding: 20px 0;
+  bottom:0;
+}
+.choices ul {
+    width: 300px;
+    display: block;
+    min-height: 100px;
+    padding:0;
+}
+.choices li {
+    border-radius: 50px;
+    background-color: #fff;
+    color: #000;
+    padding: 7px 15px;
+    width: max-content;
+    border:1px solid rgb(180, 180, 180);
+    margin:5px;
+    display: block;
+    float:left;
+}
+.choices li:after {
+    content: "\00d7"; /* This will render the 'X' */
+    color: rgb(180, 180, 180);
+    padding-left:8px;
+}
+.main-l-c {
+  width:50%;
+  float:left;
+}
+.main-r-c{
+  width:50%;
+  float:right;
+}
+#edit-links{
+  font-family: MetropolisRegular;
+  font-size: 13px;
+}
+.cover-photo {
+  background-image: url("img/cover.jpeg");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+  height:250px;
+}
+.menu {
+  right:0;
+  float: right;
+  display:block;
+  width:300px;
+  font-family: MetropolisRegular;
+}
+#pfp {
+  background-image: url("img/avatar1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.big-pfp {
+  background-size: 120px;
+  width:120px;
+  height:120px;
+  border-radius: 10%;
+  position: absolute;               /* 2 */
+  margin-top:-50px;
+}
+.nav-pfp {
+  background-size: 28px;
+  width:28px;
+  height:28px;
+  border-radius: 50%;
+  position: absolute;               /* 2 */
+  top: 45%;                         /* 3 */
+  transform: translate(0, -45%);
+}
+#nav-name {
+  position: absolute;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%);
+  width:100px;
+  font-size:13px;
+  font-family: MetropolisBold;
+}
+.web-nav {
+  height: 60px;
+  background: #fff;
+  width:100%;
+  position: fixed;
+  top:0;
+  z-index:10;
+}
+.web-nav ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.web-nav li{
+  float:left;
+  height:60px;
+  width:18px;
+  padding: 0 15px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.web-nav li img{
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin:auto;
+  position: absolute;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%)
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 7px 0 0 0;
+}
+.container{
+  max-width:1000px;
+  margin:0 auto;
+}
+.r-c h4{
+  margin-top:0;
+}
+#profile_details input,select{
+  border:0px;
+  border-bottom:1px solid;
+  padding: 5px 5px 10px 5px;
+  border-color: rgb(200, 200, 200);
+  width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  background: none;
+}
+#divider {
+  width:100%;
+  height:2px;
+  background:rgb(180, 180, 180);
+  margin: 20px 0;
+}
+</style>
+<style>
+
+@font-face {
+font-family: MetropolisRegular;
+src: url(fonts/Metropolis/OTF/Metropolis-Regular.otf);
+}
+@font-face {
+font-family: MetropolisLight;
+src: url(fonts/Metropolis/OTF/Metropolis-Light.otf);
+}
+@font-face {
+font-family: MetropolisBold;
+src: url(fonts/Metropolis/OTF/Metropolis-Bold.otf);
+}
+@media only screen and (max-width: 900px) {
+    #web-version {
+      display:none;
+    }
+    #mobile-version {
+      display:block;
+    }
+    .main-l-c{
+      width:100%;
+    }
+    .main-r-c{
+      width:100%;
+    }
+}
+</style>
+
+  </body>
+</html>
