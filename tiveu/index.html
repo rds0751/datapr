@@ -2,7 +2,7 @@
 <html>
   <head>
     <title></title>
-    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="style/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
@@ -166,6 +166,62 @@
 
 
 <style>
+@media only screen and (max-width: 955px) {
+    #web-version {
+      display:none;
+    }
+    #mobile-version {
+      display:block;
+    }
+    .web-nav,#feed-l,.uploadpost {
+      display:none;
+    }
+    .mobile-nav,.close-m-search svg,.m-search {
+      display:block;
+    }
+    .main-l-c{
+      width:100%;
+    }
+    .main-r-c{
+      width:100%;
+    }
+    .searches {
+      height:100%;
+      margin-bottom:50px;
+      margin-top:0;
+      width:100%;
+      z-index:1;
+      box-shadow: none;
+    }
+    .notifications {
+      width:100%;
+      height:100%;
+      box-shadow: none;
+      z-index:1;
+      margin:0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+    }
+
+    #t-not {
+      position: relative;
+    }
+    #not{
+      width:200px;
+    }
+
+    .feed {
+      padding-top:0px;
+      padding-bottom: 50px;
+    }
+    .post{
+      max-width: none;
+    }
+}
+
+</style>
+<style>
 
 @font-face {
 font-family: MetropolisRegular;
@@ -180,7 +236,6 @@ font-family: MetropolisBold;
 src: url(fonts/Metropolis/OTF/Metropolis-Bold.otf);
 }
 </style>
-
 <script>
   $(document).ready(function(){
     $("#showSignup").click(function(){
